@@ -1,3 +1,3 @@
 
-http://kmdsbng.github.com/emberjs_twitter_sample/
+demo http://kmdsbng.github.com/emberjs_twitter_sample/
 
