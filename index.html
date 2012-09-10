@@ -1,0 +1,36 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+<html lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<title></title>
+</head>
+<body>
+
+  <script type="text/x-handlebars">
+
+    {{#view App.SearchButtonView}}
+      <button {{action "searchJQuery"}}>search: jQuery</button>
+      <button {{action "searchEmber"}}>search: Ember.js</button>
+    {{/view}}
+
+    <ul>
+      {{#each App.tweets}}
+        <li>
+        <a href="http://twitter.com/{{from_user}}">{{from_user}}</a> {{text}}
+        </li>
+      {{/each}}
+    </ul>
+  </script>
+
+</body>
+
+<script type="text/javascript" src="jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="handlebars-1.0.0.beta.6.js"></script>
+<script type="text/javascript" src="ember.js"></script>
+<script type="text/javascript" src="twitter.js"></script>
+
+
+</html>
+
+
